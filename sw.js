@@ -59,8 +59,8 @@ self.addEventListener('fetch', function(event) {
           });
           return response;
         }).catch(function() {
-          return new Response('<h1>Connection error!</h1>'
-            + '<p>Sorry, Information is not available. Check your Internet coonnection!</p>', {
+          return new Response('<h1>This page Not visited or cached!</h1>'
+            , {
             headers: {'Content-Type': 'text/html'}
           });
         })
